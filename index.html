@@ -3,15 +3,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 	// Code taken from : https://gist.github.com/gaelbillon/4344325
-	
+	// 72 65 67 75 => hack
 	$('body').bind('keydown', function(e) {
   if (typeof(keyPressed) == "undefined") {
 		keyPressed = [];
 		}
 	var code = (e.keyCode ? e.keyCode : e.which);
  	keyPressed.push(code);
- 	if (keyPressed.length === 3) {
-	 	if (keyPressed[0] === 39 && keyPressed[1] === 40 && keyPressed[2] === 79) {
+ 	if (keyPressed.length === 4) {
+	 	if (keyPressed[0] === 72 && keyPressed[1] === 65 && keyPressed[2] === 67 && keyPressed[3] === 75) {
 	 		$('#tricks').toggle()
 	 		keyPressed = [];
 	 		}
