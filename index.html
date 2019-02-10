@@ -1,5 +1,5 @@
 <br>
-
+<br>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 	// Code taken from : https://gist.github.com/gaelbillon/4344325
@@ -12,6 +12,7 @@
  	keyPressed.push(code);
  	if (keyPressed.length === 4) {
 	 	if (keyPressed[0] === 72 && keyPressed[1] === 65 && keyPressed[2] === 67 && keyPressed[3] === 75) {
+			$('#main').toggle()
 	 		$('#tricks').toggle()
 	 		keyPressed = [];
 	 		}
@@ -22,6 +23,7 @@
 });
 </script>
 <body>
+	<div id=main>
 	<center><b>
 		Just a random person on Internet having keen interest in information security.<br> </b>
 	<br><br>
@@ -34,6 +36,8 @@
 	<br><br>
 	<b>My </b>
 	<b><a href=http://blog.rakeshmane.com>Blog</a> <br><br>
+		</div>
+		
 	<div style=display:none id=tricks>
 		<a href=https://rakeshmane.com/init/referer.html>Referer Tricks</a><br>
 	</div>
