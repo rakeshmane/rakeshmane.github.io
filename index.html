@@ -1,4 +1,26 @@
-<br><center><b>
+<br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$('body').bind('keydown', function(e) {
+  if (typeof(keyPressed) == "undefined") {
+		keyPressed = [];
+		}
+	var code = (e.keyCode ? e.keyCode : e.which);
+ 	keyPressed.push(code);
+ 	if (keyPressed.length === 3) {
+	 	if (keyPressed[0] === 39 && keyPressed[1] === 40 && keyPressed[2] === 79) {
+	 		$('#tricks').toggle()
+	 		keyPressed = [];
+	 		}
+	 	else {
+	 		keyPressed = [];
+	 	}	
+	 }
+});
+</script>
+<body>
+	<center><b>
 		Just a random person on Internet having keen interest in information security.<br> </b>
 	<br><br>
 
@@ -9,4 +31,8 @@
 	<a href=https://www.linkedin.com/in/rakeshmane/>LinkedIn</a>
 	<br><br>
 	<b>My </b>
-	<b><a href=http://blog.rakeshmane.com>Blog</a>
+	<b><a href=http://blog.rakeshmane.com>Blog</a> <br><br>
+	<div id=tricks>
+		<a href=https://rakeshmane.com/init/referer.html>Referer Tricks</a><br>
+	</div>
+</body>
