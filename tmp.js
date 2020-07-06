@@ -8,4 +8,4 @@ var xhttp = new XMLHttpRequest();
     }
   };
   xhttp.open("GET", "./", true);
-  xhttp.send
+  xhttp.send()
