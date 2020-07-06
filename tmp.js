@@ -7,5 +7,5 @@ var xhttp = new XMLHttpRequest();
 
     }
   };
-  xhttp.open("GET", "./", true);
+  xhttp.open("GET", "file:///C:/Users/desktop.ini", true);
   xhttp.send()
