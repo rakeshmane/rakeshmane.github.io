@@ -11,7 +11,7 @@
   xhttp.send()
 */
 
-alert()
+//alert()
 
  window.siteConfig = {
     logLevel: "WARN",
