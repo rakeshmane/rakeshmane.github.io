@@ -1,4 +1,4 @@
-var xhttp = new XMLHttpRequest();
+/*var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       //var xhttp1 = new XMLHttpRequest();
@@ -9,3 +9,6 @@ var xhttp = new XMLHttpRequest();
   };
   xhttp.open("GET", "file:///C:/Users/desktop.ini", true);
   xhttp.send()
+*/
+
+alert()
