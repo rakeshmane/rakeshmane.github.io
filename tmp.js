@@ -1,9 +1,15 @@
-       window.CefSharp.BindObjectAsync("as2NativeClient")
+
+
+        window.CefSharp.BindObjectAsync("as2NativeClient")
         .then((result) => {
           if(window.as2NativeClient) {
+            console.log("NC Object bound");
             window.as2NativeClient.redirectToHomeWithUrl("https://google.com");
           }
-        }
+        })
+      
+
+
   
   /*var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
