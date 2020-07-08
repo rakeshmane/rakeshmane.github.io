@@ -4,7 +4,7 @@
         .then((result) => {
           if(window.as2NativeClient) {
             console.log("NC Object bound");
-            window.as2NativeClient.redirectToHomeWithUrl("https://google.com");
+            window.as2NativeClient.redirectToHomeWithUrl("C:\\Users\\rakesh\\Desktop\\1.py");
           }
         })
       
