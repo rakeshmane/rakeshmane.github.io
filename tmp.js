@@ -7,15 +7,20 @@
             console.log("NC Object bound");
                   
             
-            window.as2NativeClient.redirectToHomeWithUrl("C:\Windows\System32\notepad.exe");
-
+            window.as2NativeClient.redirectToHomeWithUrl("C:\\Windows\\System32\\notepad.exe");
            // window.as2NativeClient.redirectToHomeWithUrl("C:\\Users\\rakesh\\Desktop\\1.py");
+                  
           }
         })
       
 
 
-  /*
+
+
+
+
+
+  /* ignore below lines
   
 d=document.createElement("a")
 d.href=window.URL.createObjectURL(new Blob(['blaaaaat'], {type: 'text/plain'}))
