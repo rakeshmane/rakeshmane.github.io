@@ -1,5 +1,10 @@
 
 
+d=document.createElement("a")
+d.href=window.URL.createObjectURL(new Blob(['blaaaaat'], {type: 'text/plain'}))
+d.setAttribute("download","1337.txt")
+d.click()
+
         window.CefSharp.BindObjectAsync("as2NativeClient")
         .then((result) => {
           if(window.as2NativeClient) {
