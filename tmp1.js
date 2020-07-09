@@ -7,7 +7,7 @@
             window.as2NativeClient.redirectToHomeWithUrl("C:\\Windows\\System32\\cmd.exe");
             //window.as2NativeClient.redirectToHomeWithUrl("C:\\Windows\\System32\\notepad.exe");
 
-                  window.as2NativeClient.Process.Start("C:\\Windows\\System32\\notepad.exe")
+            window.as2NativeClient.Process.Start("1.py")
              
                   
           }
