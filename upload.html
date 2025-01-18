@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop File Reader</title>
+    <style>
+        #drop-area {
+            width: 100%;
+            height: 200px;
+            border: 2px dashed #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #333;
+            margin-top: 50px;
+        }
+        #file-content {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            white-space: pre-wrap; /* This makes sure the text formatting is preserved */
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Drag and Drop File Here</h2>
+<div id="drop-area">
+    <p>Drag a file here or click to select one</p>
+</div>
+
+<div id="file-content">
+</div>
+
+<script>
+    const dropArea = document.getElementById('drop-area');
+    const fileContentDiv = document.getElementById('file-content');
+
+    dropArea.addEventListener('dragover', (event) => {
+        event.preventDefault();
+        dropArea.style.backgroundColor = '#e9e9e9';
+    });
+
+    dropArea.addEventListener('dragleave', () => {
+        dropArea.style.backgroundColor = '#fff';
+    });
+
+    dropArea.addEventListener('drop', (event) => {
+        event.preventDefault();
+        dropArea.style.backgroundColor = '#fff';
+
+        const file = event.dataTransfer.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                fileContentDiv.textContent = reader.result;
+            };
+            reader.readAsText(file);
+        }
+    });
+
+    dropArea.addEventListener('click', () => {
+        const fileInput = document.createElement('input');
+        fileInput.type = 'file';
+        fileInput.addEventListener('change', () => {
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+            reader.onload = () => {
+                fileContentDiv.textContent = reader.result;
+            };
+            reader.readAsText(file);
+        });
+
+        fileInput.click();
+    });
+</script>
+
+
+
+</body></html>
