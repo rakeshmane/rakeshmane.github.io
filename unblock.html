@@ -1,0 +1,22 @@
+
+<html>
+	Enter blocked domain: <input id=d value='https://example.com'><button onclick=hack()>fetch</button>
+<body>
+</body>
+<script>
+	function hack(){
+		d=document.getElementById('d').value
+	fetch(d)
+  .then(response => {
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    return response.text();
+  })
+  .then(data => {
+    console.log(data); // Print raw HTML
+    document.body.innerHTML = data; // Display in page (for demo)
+  })
+  .catch(error => {
+    console.error('Fetch error:', error);
+  });}
+	</script>
+</html>
